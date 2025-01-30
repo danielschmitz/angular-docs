@@ -2,6 +2,8 @@
 keyword: ComponentesTemplates
 ---
 
+{% raw %}
+
 No Angular, **componentes** são a base da arquitetura de uma aplicação. Eles são responsáveis por controlar uma parte da interface do usuário (UI) e são compostos por três partes principais: o **template** (HTML), a **classe** (TypeScript) e os **metadados** (decorators). Já os **templates** são usados para definir a estrutura HTML que será renderizada na tela, podendo ser criados de forma inline (dentro do componente) ou externa (em um arquivo separado). Além disso, a **interpolação de dados** é uma das formas mais simples de exibir dados dinâmicos no template.
 
 Abaixo, vamos explorar cada um desses tópicos com exemplos práticos.
@@ -66,13 +68,12 @@ export class ExternoTemplateComponent {}
 ```
 Neste caso, o HTML está em um arquivo separado chamado `externo-template.component.html`.
 
-<div ngNonBindable>
-
-## 3. Interpolação de Dados ( \{\{ }} )
+## 3. Interpolação de Dados ( {{ ... }} )
 
 A interpolação de dados é uma das formas mais comuns de exibir dados dinâmicos no template. Ela usa a sintaxe &#123;&#123; &#125;&#125; para vincular propriedades da classe do componente ao template.
 
 #### Explicação:
+
 A interpolação permite que você insira valores de variáveis, expressões ou chamadas de métodos diretamente no HTML. O Angular avalia automaticamente o conteúdo dentro das chaves e o exibe no template.
 
 #### Exemplo 1: Exibindo uma variável
@@ -87,7 +88,8 @@ export class InterpolacaoComponent {
   nome = 'João';
 }
 ```
-No template, `\{\{ nome }}` será substituído por "João".
+
+No template, `{{ nome }}` será substituído por "João".
 
 #### Exemplo 2: Usando uma expressão
 
@@ -100,12 +102,10 @@ import { Component } from '@angular/core';
 })
 export class InterpolacaoComponent {}
 
-Aqui, `{{ 2 + 2 }}` será avaliado como `4`.
 ```
+Aqui, `{{ 2 + 2 }}` será avaliado como `4`.
 
----
-
-</div>
+{% endraw %}
 
 ### Conclusão
 
