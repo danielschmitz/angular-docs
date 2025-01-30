@@ -1,11 +1,12 @@
 import {NgDocPage} from '@ng-doc/core';
 import ConceitosFundamentaisCategory from '../ng-doc.category';
 
-const InstalacaoPage: NgDocPage = {
-	title: `Instalação`,
+const ComponentesTemplates: NgDocPage = {
+	title: `Componentes e Templates`,
 	mdFile: './index.md',
 	category: ConceitosFundamentaisCategory,
-	order: 1
+	order: 2,
+	
 };
 
-export default InstalacaoPage;
+export default ComponentesTemplates;
