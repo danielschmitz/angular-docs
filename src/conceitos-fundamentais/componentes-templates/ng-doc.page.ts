@@ -5,7 +5,7 @@ const ComponentesTemplates: NgDocPage = {
 	title: `Componentes e Templates`,
 	mdFile: './index.md',
 	category: ConceitosFundamentaisCategory,
-	order: 2,
+	order: 3,
 	
 };
 

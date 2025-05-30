@@ -5,7 +5,7 @@ const EstruturaDeArquivosPage: NgDocPage = {
 	title: `Estrutura de Arquivos`,
 	mdFile: './index.md',
 	category: ConceitosFundamentaisCategory,
-	order: 3
+	order: 4
 };
 
 export default EstruturaDeArquivosPage;

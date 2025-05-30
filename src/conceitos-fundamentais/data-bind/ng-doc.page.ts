@@ -5,7 +5,7 @@ const DataBindPage: NgDocPage = {
 	title: `DataBind`,
 	mdFile: './index.md',
 	category: ConceitosFundamentaisCategory,
-	order: 5
+	order: 6
 };
 
 export default DataBindPage;

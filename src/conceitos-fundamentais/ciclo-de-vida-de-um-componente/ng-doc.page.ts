@@ -5,7 +5,7 @@ const CicloDeVidaDeUmComponentePage: NgDocPage = {
 	title: `Ciclo de Vida de um Componente`,
 	mdFile: './index.md',
 	category: ConceitosFundamentaisCategory,
-	order: 4
+	order: 5
 };
 
 export default CicloDeVidaDeUmComponentePage;
